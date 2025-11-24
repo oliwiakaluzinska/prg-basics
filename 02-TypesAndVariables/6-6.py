@@ -1,0 +1,5 @@
+print(f'a {ord('a')}')
+print(f'b {ord('b')}')
+print(f'z {ord('z')}')
+print(f'A {ord('A')}')
+print(f'+ {ord('+')}')
