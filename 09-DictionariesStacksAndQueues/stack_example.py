@@ -29,3 +29,17 @@ while not cards.empty():
 Note the order of the printed elements.
 The last added element is printed first.
 """
+cards.put(2)
+cards.put(3)
+cards.put(7)
+cards.put(4)
+
+first = cards.get()   # 4
+second = cards.get()  # 7
+
+sum_ = first + second
+print("Sum of top two elements:", sum_)
+
+while not cards.empty():
+    card = cards.get()
+    print(card)
