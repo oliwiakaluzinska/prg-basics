@@ -1,15 +1,9 @@
 number = int(input('Enter the number: '))
 countdown = number
+in_words = {5:'five',4:'four',3:'three',2:'two',1:'one'}
 while countdown > 0:
-    print(countdown)
+    if countdown in in_words:
+        print(in_words[countdown])
+    else:
+        print(countdown)
     countdown -= 1
-    if countdown == 5:
-        countdown == 'five'
-    elif countdown == 4:
-        countdown == 'four'
-    elif countdown == 3:
-        countdown == 'three'
-    elif countdown == 2:
-        countdown == 'two'
-    elif countdown == 1:
-        countdown == 'one'
