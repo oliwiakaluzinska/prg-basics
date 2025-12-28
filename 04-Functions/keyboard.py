@@ -16,3 +16,4 @@ def input_boolean(message):
             return True
     elif b == 'n':
             return False
+    
