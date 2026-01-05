@@ -1,0 +1,5 @@
+bread
+cheese
+butter
+apple
+flour

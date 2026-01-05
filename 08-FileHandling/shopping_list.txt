@@ -4,3 +4,7 @@ bread
 vjv
 jhjv
 jbkj
+bread
+cheese
+butter
+apple
