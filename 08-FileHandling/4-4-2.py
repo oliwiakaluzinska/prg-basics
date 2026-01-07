@@ -1,7 +1,13 @@
-files_content = 'it_company.csv'
+def f(files_name, size=5):
+    with open(files_name,) as file:
+        lines = file.readlines()
 
-with open(files_content, 'r', encoding='utf-8') as file:
-    names = file.read()
+    for i in range(0, len(lines), size):
+        for line in lines[i:i + size]:
+            print(line.rstrip())
 
-for i in names:
+        
+        if i + size < len(lines):
+            input("Press Enter key...")
 
+f("it_company.csv")

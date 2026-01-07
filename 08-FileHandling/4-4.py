@@ -1,5 +1,5 @@
 def display_file_in_chunks(filename, chunk_size=5):
-    with open(filename, 'r', encoding='utf-8') as file:
+    with open(filename,) as file:
         lines = file.readlines()
 
     for i in range(0, len(lines), chunk_size):
