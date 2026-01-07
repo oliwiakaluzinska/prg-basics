@@ -40,6 +40,8 @@ second = cards.get()  # 7
 sum_ = first + second
 print("Sum of top two elements:", sum_)
 
+suma = 0
 while not cards.empty():
     card = cards.get()
-    print(card)
+    suma += card
+print(suma)
