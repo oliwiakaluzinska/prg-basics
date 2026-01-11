@@ -23,7 +23,7 @@ class TV:
     def show_channels(self):
         print('Channels list:')
         number = 1
-        if not self.channels_list.empty():
+        if not self.channels_list == []:
           for i in self.channels_list:
             print(f'{number}. {i}')
             number += 1
