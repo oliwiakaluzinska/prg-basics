@@ -3,6 +3,7 @@ class TV:
         self.is_on = False
         self.channel_no = 1
         self.channels_list = []
+        self.volume = 0
         
     def turn_on(self):
         self.is_on = True
@@ -12,7 +13,7 @@ class TV:
     
     def show_status(self):
         if self.is_on:
-            return f'TV is on and channel number is: {self.channel_no}'
+            return f'TV is on and channel number is: {self.channel_no} and volume {self.volume}'
         else:
             return 'TV is off'
     
@@ -32,5 +33,17 @@ class TV:
 
     def change(self, new_channel_no):
         self.channel_no = new_channel_no
+
+    def increase(self):
+        if self.volume <= 10:
+          self.volume += 1
+        else:
+            return 'You can not increase more'
+    
+    def decrease(self):
+        if self.volume >= 0:
+            self.volume -= 1
+        else:
+            return 'You can not decrease more'
 
     
