@@ -12,4 +12,3 @@ class Contact_list:
         for i in self.arr:
             for j in i:
                 print(j)
-            print()
