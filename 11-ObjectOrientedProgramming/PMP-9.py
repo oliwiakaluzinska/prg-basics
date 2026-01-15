@@ -8,9 +8,9 @@ class C:
     def show(self):
         result = ''
         if self.age >= 18:
-            result += self.surname.upper() + self.name[0].upper() + str(self.seniority)
+            result = self.surname.upper() + self.name[0].upper() + str(self.seniority)
         elif self.age < 18:
-            result += self.surname.lower() + self.name[0].lower() + str(self.seniority)
+            result = self.surname.lower() + self.name[0].lower() + str(self.seniority)
         return result
     
 def main():
